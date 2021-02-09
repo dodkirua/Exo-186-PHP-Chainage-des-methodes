@@ -12,3 +12,11 @@
  *
  * 5. Utilisez le chaînage des méthodes pour mettre à jour le nom et le prix en une seule ligne.
  */
+
+require "classes/VODService.php";
+
+$vod = new VODService('Netflix','9.99');
+echo $vod."<br>";
+
+$vod->setPrice(5.99)->setName("Ma super vod");
+echo $vod."<br>";
